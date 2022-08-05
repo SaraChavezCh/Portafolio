@@ -318,6 +318,7 @@ footer{
     text-align: center;
     /* gap: 43px; */
     /* border: solid black 5px; */
+    margin-bottom: 5rem;
 }
 .footer-container{
     /* border: solid red 5px; */
@@ -334,4 +335,16 @@ footer{
 .main-information{
     color: var(--green);
     font-weight: 600;
+}
+.phrase{
+    color: var(--orange);
+    text-align: center;
+    width: 258px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.heart{
+width: 13px;
 }
