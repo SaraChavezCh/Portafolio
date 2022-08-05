@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+:root{
+    --pale: #FEF2F2;
+    --orange:#F26440;
+    --green: #286F6C;
+    --gray: #ADADAD;
+    --WHITE: #FFFFFF;
+    --BEIGE: #F9F5F2;
+}
+*{
+box-sizing: border-box;
+}
+
+body{
+font-family: 'Inter', sans-serif;
+margin: 0;
+color: var(--gray);
+}
+
+/* HEADER */
+.main-header{
+min-height: 90vh;
+background-color: var(--pale);
+}
+
+.main-nav{
+background-color: var(--pale);
+display: flex;
+height: 60px;
+align-items: center;
+justify-content: end;
+padding-right: 1.5rem; 
+}
+
+.main-input__menu{
+display: none;
+}
+
+.menu-box{
+background-color: #286f6bd7;
+width: 90%;
+position: absolute;
+top:80px;
+display: none;
+z-index: 30;
+}
+.main-menu{
+list-style: none;
+text-align: center;
+padding: 0;
+display: flex; 
+flex-direction: column;
+}
+.main-menu__item{
+width: 100%;
+}
+.main-menu__link{
+vertical-align: .2rem;
+text-decoration: none;
+color: var(--WHITE);
+}
+.menu-box::after{
+    content: "";
+    display: block;
+    border-top: 15px solid transparent;
+    border-right: 15px solid var(--green);
+    border-bottom: 15px solid var(--green);
+    border-left: 15px solid transparent;
+    position: absolute;
+    right: 0;
+    top: -30px; 
+}
+/* HEADER */
+
+/* MENU HAMBURGUESA CON CSS */
+.main-input__menu:checked ~ .menu-box{
+    display: block;
+}
+/* MENU HAMBURGUESA CON CSS */
+
+/* PRESENTACION */
+.front{
+    position: relative;
+}
+.front-tittle{
+    font-size: 50px;
+    font-weight:600;
+    padding-left: 1.5rem;
+    padding-right: 4rem;
+    margin: 0;
+    color: #000;
+}
+.container{
+    display: flex;
+    position: relative;
+    text-align: center;
+}
+
+.img-container{
+    max-width: 437px;
+    position: relative;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    padding-left: 2rem;
+}
+.front-img{
+    width: 190px;
+    z-index: 10;
+}
+.circle{
+    position: absolute;
+    top:0;
+    border-radius: 50%;
+    z-index: 10;
+}
+.circle--front{
+    width: 200px;
+    height: 200px;
+    background-color: var(--green);
+    right: 0;
+    position: absolute;
+    left: 9rem;
+    top: 20px;
+    z-index: 0;
+}
+.social-media{
+    margin-left: 1.5rem;
+    display: inline-block;
+}
+
+.social-media__icon{
+    margin-top: 15px;
+    display: flex;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 5px solid var(--WHITE);
+    background-color: var(--orange);
+    padding: 1px;
+    justify-content: center;
+    align-items: center;
+}
+.front-icon{
+    width: 2rem;
+}
+
+/* AQUI COMIENZA EL ESTILO DEL MAIN */
+
+/* .main{
+    padding: 0 1.5rem;
+} */
+.main__container{
+    margin-bottom: 45px;
+    padding: 0 1.5rem;
+}
+.subtittle{
+color: var(--green);
+font-weight: 600;
+font-size: 32px;
+z-index: 10;
+}
+.habilities{
+    padding: 0 1.5rem;
+    margin-bottom: 20px;
+
+}
+
+/* AQUI COMIENZA EL ESTILO DEL SECTION HABILITIES */
+.subtittle-white{
+    color: var(--WHITE);
+    z-index: 10;
+}
+.circle-container{
+    position: relative;
+}
+.circle-green{
+    width: 140px;
+    height: 140px;
+    background-color: var(--green);
+    position: absolute;
+    left: -74px;
+    top: -84px;
+    z-index: -1;
+}
+.circle-orange{
+    width: 80px;
+    height: 80px;
+    background-color: var(--orange);
+    position: absolute;
+    left: -6px;
+    top: -5px;
+    z-index: -1;
+}
+.articles{
+    height: 250px;
+    display: flex;
+    margin-left: 79px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    gap: 10px;
+}
+
+.article-list{
+min-width: 180px;
+background-color: var(--BEIGE);
+padding: 10px;
+}
+
+.article-tittle{
+    color: #000;
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* AQUI ACABA EL ESTILO DEL SECTION HABILITIES */
+
+/* AQUI COMIENZA EL ESTILO DEL SECTION EXPERIENCES */
+.experience{
+    padding: 0 1.5rem 3rem 1.5rem;
+}
+.experiences-container{
+    display: grid;
+    width: 100%;
+    height: 500px;
+    grid-template-columns: 1fr 1fr .8fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.experiences-imgc{
+    width: 124px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.black{
+    color: #000;
+    font-size: 20px;
+    padding-top: 10px;
+}
+.degree{
+    color: inherit;
+}
+.experience-info{
+    margin-right: 15px;
+}
+.portafolio{
+    width: 100vw;
+    height: 100%;
+    color: var(--WHITE);
+    position: relative;
+    background-color: var(--green);
+    padding: 1.5rem;
+}
+.subtittle--white{
+    color: var(--WHITE);
+}
+.container-shadow{
+    position: relative;
+    width: 100%;
+    height: 24rem;
+    background-color: var(--WHITE);
+    border-radius: 1rem;
+    padding: 20px 20px 50px;
+    box-shadow: 5px 0 10px black ;
+}
+.portafolio-img{
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+.portafolio-position_top{
+    top: -60px;
+}
+.portafolio-position_down{
+    top: 60px;
+}
+.container-shadow_top{
+    background-image: url(../Imagenes/image\ 11.jpg);
+}
+.portafolio-img_bottom{
+    background-image: url(../Imagenes/Rectangle\ 47.jpg);
+}
+
+.fitness-tittle{
+color: black;
+}
+
+/* AQUI ACABA EL ESTILO DEL SECTION EXPERIENCES */
+
+/* AQUI COMIENZA EL ESTILO DEL FOOTER */
+footer{
+    height: 100vh;
+    padding: 0 1.5rem;
+    padding-top: 150px;
+    position: relative;
+}
+.circle-blue{
+    left: -112px;
+    top: 227px;
+    width: 250px;
+    height: 250px;
+    background-color:#286f6b5c;
+}
+.information{
+    display: flex;
+    flex-direction:row;
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: solid black 5px;
+}
+.footer-container{
+    border: solid red 5px;
+
+}
+.main-information-data{
+    display: inline;
+}
+.main-information{
+    color: var(--green);
+    font-weight: 600;
+}
