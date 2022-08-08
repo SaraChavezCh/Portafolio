@@ -1,0 +1,23 @@
+
+@media screen and (min-width: 500px){
+
+.circle--front {
+    left: 13rem;
+}
+.img-container {
+padding-left: 10rem;  
+}
+.container-shadow {
+    width: 437px;
+}
+.information {
+    width: 479px;
+}
+}
+
+@media  screen and (min-width: 600px) {
+.front-img {
+    width: 219px;
+}
+    
+}

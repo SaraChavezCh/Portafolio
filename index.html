@@ -6,17 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./assets/Icons/Templates.png">
     <link rel="stylesheet" href="./assets/CSS/style.css">
+    <link rel="stylesheet" href="./assets/CSS/styleResponsive.css">
     <title>Sara Chávez</title>
 </head>
 <body>
     <!-- AQUI COMIENZA EL HEADER -->
  <header class="main-header"> 
     <nav class="main-nav">
-            <input class= main-input__menu type="checkbox" id="menu--mobile">
-            <label for="menu--mobile" class="main-menu__label">
-              <img class= main-menu__image src="./assets/Icons/menu1.svg" alt="menu">
-            </label>
-            <div class="menu-box">
+            <!-- <input class= main-input__menu type="checkbox" id="menu--mobile">
+            <label for="menu--mobile" class="main-menu__label"> -->
+              <div class="main-menu__container" id="toggle-menu">
+                <img class= main-menu__image  src="./assets/Icons/menu1.svg"  alt="menu">
+              </div>
+                
+            <!-- </label> -->
+            <div class="menu-box" id="menuBox">
             <ul class="main-menu">
                 <li class="main-menu__item"><a href="#" class="main-menu__link">Home</a></li>
 
@@ -167,6 +171,6 @@
     
 </footer>
 
-
+<script src="./JS/main.js"></script>
 </body>
 </html>
