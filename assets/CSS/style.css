@@ -19,6 +19,7 @@ color: var(--gray);
 
 /* HEADER */
 .main-header{
+width: 361px;
 min-width: 100vw;
 min-height: 90vh;
 background-color: var(--pale);
@@ -43,7 +44,7 @@ cursor: pointer; /* No funciona */
 
 .menu-box{
     background-color: #286f6bd7;
-    width: 90%;
+    width: 100%;
     position: absolute;
     top:80px;
     /* display: none; */
@@ -130,7 +131,7 @@ color: var(--WHITE);
     background-color: var(--green);
     right: 0;
     position: absolute;
-    left: 9rem;
+    left: 10rem;
     top: 20px;
     z-index: 0;
 }
@@ -260,7 +261,7 @@ padding: 10px;
 .portafolio{
     height: 56rem;
     min-height: 90vh;
-    max-width: 100vw;
+    min-width: 361px;
     color: var(--WHITE);
     position: relative;
     background-color: var(--green);
@@ -271,7 +272,7 @@ padding: 10px;
 }
 .container-shadow{
     position: relative;
-    width: 340px;
+    min-width: 312px;
     height: 27rem;
     background-color: var(--WHITE);
     border-radius: 1rem;
@@ -349,7 +350,7 @@ footer{
 .phrase{
     color: var(--orange);
     text-align: center;
-    width: 258px;
+    width: 300px;
     margin-left: auto;
     margin-right: auto;
     font-weight: 600;
