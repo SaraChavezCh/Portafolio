@@ -24,7 +24,7 @@ color: var(--gray);
 
 /* HEADER */
 .header{
-min-height: 80vh;
+/* min-height: 80vh; */
 background-color: var(--pale);
 }
 
@@ -62,6 +62,11 @@ background-color: var(--pale);
 text-decoration: none;
 color: var(--WHITE);
 vertical-align: .2rem;
+}
+
+.nav-menu__item :hover{
+    color: var(--green);
+    font-weight: 600;
 }
 
 .nav-menu__box::after{
@@ -255,7 +260,7 @@ padding: 10px;
 .portafolio{
     height: 56rem;
     min-height: 90vh;
-    min-width: 100vw;
+    /* min-width: 100vw; */
     color: var(--WHITE);
     position: relative;
     background-color: var(--green);
@@ -266,7 +271,7 @@ padding: 10px;
 }
 .container-shadow{
     position: relative;
-    max-width: 500px;
+    max-width: 460px;
     height: 27rem;
     background-color: var(--WHITE);
     border-radius: 1rem;
@@ -301,7 +306,7 @@ color: rgb(0, 0, 0);
 
 /* AQUI COMIENZA EL ESTILO DEL FOOTER */
 footer{
-    height: 100vh;
+    /* height: 100vh; */
     padding: 0 1.5rem;
     padding-top: 232px;
     position: relative;
