@@ -189,7 +189,7 @@ z-index: 10;
     height: 140px;
     background-color: var(--green);
     position: absolute;
-    left: -74px;
+    left: -83px;
     top: -84px;
     z-index: -1;
 }
@@ -241,7 +241,7 @@ padding: 10px;
     align-items: center;
 }
 .experiences-imgc{
-    width: 86px;
+    width: 60px;
     text-align: center;
     margin-right: 10px;
 }
@@ -280,7 +280,7 @@ padding: 10px;
 }
 .portafolio-img{
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: revert;
     object-fit: contain;
     width: 100%;
     height: 100%;
@@ -292,10 +292,10 @@ padding: 10px;
     top: 60px;
 }
 .container-shadow_top{
-    background-image: url(../Imagenes/image\ 11.jpg);
+    background-image: url(../Icons/portafolio\ 1_1.png);
 }
 .portafolio-img_bottom{
-    background-image: url(../Imagenes/Rectangle\ 47.jpg);
+    background-image: url(../Icons/portafolio\ 2.png);
 }
 
 .fitness-tittle{
